@@ -1,0 +1,130 @@
+/* Poppins is my headings font  while inter is the body font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --heading-font: 'Poppins', sans-serif;
+  --body-font: 'Inter', sans-serif;
+  --primary-color: #333; /* Adjust as needed */
+  --secondary-color: #555; /* Adjust as needed */
+}
+
+body,html {
+  font-family: var(--body-font);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--primary-color);
+  background-color: #f9f9f9;
+  min-height: 100svh;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+main{
+  padding: min(30px,7%);
+}
+
+main p{
+  color: rgb(52, 41, 41);
+}
+
+.container{
+  border: 1px solid grey;
+  border-radius: 1rem;
+  margin-bottom: 20px;
+  padding: min(3em, 15%);
+}
+
+#side-bar{
+  height: 100svh;
+  width: 230px;
+  padding: 5px 1em;
+  border-right: 1px solid red;
+  position: sticky;
+  overflow-y: scroll;
+  top: 0;
+  align-items: start;
+}
+
+#side-bar ul{
+  list-style: none;
+}
+
+#side-bar > ul > li:first-child{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.logo{
+  font-weight: 600;
+}
+
+#side-bar ul li.active a{
+   color: red;
+}
+
+#side-bar a, #sidebar, .dropdown-btn, #sidebar, .logo{
+  border-radius: .5em;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 0.85em;
+}
+
+.dropdown-btn{
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+#side-bar svg{
+  flex-shrink: 0;
+  fill: rgb(7, 115, 211);
+}
+
+#side-bar span a,  .dropdown-btn span{
+flex-grow: 1;
+}
+
+#side-bar a:hover, 
+ .dropdown-btn:hover{
+  background-color: rgba(128, 128, 128, 0.226);
+}
+#side-bar, .sub-menu{
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: all 300ms ease;
+}
+
+ .sub-menu a{
+  margin-left: 1.5em;
+ 
+}
+
+#side-bar .sub-menu.show{
+  grid-template-rows: 1fr;
+}
+
+.sub-menu > div{
+  overflow: hidden;}
+
+.dropdown-btn svg{
+  transition: all 250ms ease;
+}
+
+.rotate svg:last-child{
+  rotate: -180deg;
+}
+
