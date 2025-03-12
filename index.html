@@ -9,9 +9,9 @@
 <body>
   <nav id="side-bar">
      <ul>
-      <li class="logo">
-        <span>Pascal</span>
-        <button>
+      <li >
+        <span class="logo">Pascal</span>
+        <button onclick="toggleSideBar()" id="toggle-btn">
            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z"/></svg>
         </button>
       </li>
@@ -26,7 +26,7 @@
         <a href="dashboard.html">
           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M520-600v-240h320v240H520ZM120-440v-400h320v400H120Zm400 320v-400h320v400H520Zm-400 0v-240h320v240H120Zm80-400h160v-240H200v240Zm400 320h160v-240H600v240Zm0-480h160v-80H600v80ZM200-200h160v-80H200v80Zm160-320Zm240-160Zm0 240ZM360-280Z"/></svg>
           <span>
-            Dashboard
+            Techstack
           </span>
         </a>       
       </li>
@@ -35,15 +35,15 @@
         <button onclick="toggleSubMenu(this)" class="dropdown-btn">
            <!-- folder icon -->
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M560-320h80v-80h80v-80h-80v-80h-80v80h-80v80h80v80ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h240l80 80h320q33 0 56.5 23.5T880-640v400q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H447l-80-80H160v480Zm0 0v-480 480Z"/></svg>
-          <span>Craete</span>
+          <span>Projects</span>
                <!-- drop down icon -->
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
         </button>
           <ul class="sub-menu">
             <div>
-              <li><a href="#">Folder</a></li>
-              <li><a href="#">Document</a></li>
-              <li><a href="#">Project</a></li>
+              <li><a href="#">Mini-Projects</a></li>
+              <li><a href="#">Personal-Projects</a></li>
+              <li><a href="#">Collaborations</a></li>
             </div>
            
           </ul>
@@ -53,31 +53,26 @@
         <button onclick="toggleSubMenu(this)"  class="dropdown-btn">
            <!-- folder icon -->
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M560-320h80v-80h80v-80h-80v-80h-80v80h-80v80h80v80ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h240l80 80h320q33 0 56.5 23.5T880-640v400q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H447l-80-80H160v480Zm0 0v-480 480Z"/></svg>
-          <span>Todo list</span>
+          <span>Contatct</span>
                <!-- drop down icon -->
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
         </button>
           <ul class="sub-menu">
             <div>
-              <li><a href="#">Work</a></li>
-            <li><a href="#">Private</a></li>
-            <li><a href="#">Project</a></li>
+              <li><a href="#">Contact</a></li>
+            <li><a href="#">whatsapp</a></li>
+            <li><a href="#">X</a></li>
+            <li><a href="#">Mail</a></li>
             </div>
             
           </ul>
       </li>
 
-      <li > 
-        <a href="calender.html">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/></svg>
-          <span>Calender</span>
-        </a>
-      </li>
 
       <li >
         <a href="calender.html">
           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
-          <span>Profile</span>
+          <span>About Me</span>
         </a>
       </li>
 
@@ -86,32 +81,56 @@
   </nav>
 
   <main>
-    <div class="container">
-      <h2>Fuck Society</h2>
-      <p>=Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ullam alias rerum, minima debitis ab mollitia sequi voluptatem veniam praesentium tenetur laborum possimus culpa exercitationem explicabo assumenda itaque vero? Est.</p>
+   <header class="d-flex align-center justify-space-btw">
+    <h5>frontend dev </h5>
+
+    <button class="d-flex align-center fwb">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
+
+      <span>
+        Resume
+      </span>
+    </button>
+   </header>
+
+    <div class="container justify-space-btw">
+      <!-- this div contains summary content about me -->
+       <div class="intro-content">
+        <h1>
+          Good day! my name is 
+          <span class="d-block">Joseph Pascal</span>
+          i am an 
+          <span class="">
+            Aspiring frontend Web Developer</span> 
+        </h1>
+
+        <small>
+          <u>Click to see more aboout me🤝</u>
+        </small>
+       </div>
+       
+
+       <!-- picture div -->
+       <div class="img-container">
+        <img height="100%"  width="100%" class="my-img" src="images/ali-hadadi-kia-CB2B56hweCU-unsplash.jpg" alt="">
+       </div>
     </div>
 
-    <div class="container">
-      <h2>Fuck Society</h2>
-      <p>=Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ullam alias rerum, minima debitis ab mollitia sequi voluptatem veniam praesentium tenetur laborum possimus culpa exercitationem explicabo assumenda itaque vero? Est.</p>
-    </div>
+ <!-- tech stack section -->
+     <div class="container">
+        <h2>my Techstack</h2> 
 
-    <div class="container">
-      <h2>Fuck Society</h2>
-      <p>=Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ullam alias rerum, minima debitis ab mollitia sequi voluptatem veniam praesentium tenetur laborum possimus culpa exercitationem explicabo assumenda itaque vero? Est.</p>
-    </div>
+       
 
-    <div class="container">
-      <h2>Fuck Society</h2>
-      <p>=Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ullam alias rerum, minima debitis ab mollitia sequi voluptatem veniam praesentium tenetur laborum possimus culpa exercitationem explicabo assumenda itaque vero? Est.</p>
-    </div>
+     </div>
+
+
    
    
 
 
 
 
-</div>
     
 
   </main>

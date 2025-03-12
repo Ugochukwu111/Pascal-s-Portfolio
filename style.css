@@ -15,7 +15,7 @@
   --secondary-color: #555; /* Adjust as needed */
 }
 
-body,html {
+body {
   font-family: var(--body-font);
   font-size: 16px;
   line-height: 1.6;
@@ -27,19 +27,92 @@ body,html {
   grid-template-columns: auto 1fr;
 }
 
+.img-container{
+ width: 300px;
+ border-radius: 50%;
+ aspect-ratio: 1;
+ transition: all 300ms ease;
+}
+
+.img-container:hover{
+  transform: scale(1.05);
+}
+
+.my-img{
+  object-fit: cover;
+  border-radius: inherit;
+  display: block;
+}
+
+/* ==== utilities ====*/
+/* lay-yout utilities */
+.d-block{
+  display: block;
+}
+.d-flex{
+  display: flex;
+}
+.align-center{
+  align-items: center;
+}
+.justify-center{
+  justify-content: center;
+}
+.justify-space-btw{
+  justify-content: space-between;
+}
+
+/* font utilities */
+/* font weight bold */
+.fwb{
+  font-weight: bold;
+}
+
 main{
-  padding: min(30px,7%);
+  padding: min(10px,3%);
+  padding-top: 0;
+  padding-left: 1em;
+  /* width: 1fr; */
+  /* min-width: 20rem; */
 }
 
 main p{
   color: rgb(52, 41, 41);
 }
 
+header{
+  border: 2px solid gray;
+  position: sticky;
+  top: 0;
+  left: 0;
+  margin-bottom: 2em;
+  margin-top: .2em;
+   padding: .8em 1em;
+   border-radius: 1.5rem;
+}
+
+header > button{
+  border-radius: 1rem;
+  padding: .7em 1em;
+  border: none;
+  cursor: pointer;
+  transition: all 250ms ease-in;
+}
+
+header > button:active{
+   transform: scale(.9);
+}
+
+.intro-content{
+   max-width: 400px;
+}
+
 .container{
   border: 1px solid grey;
   border-radius: 1rem;
   margin-bottom: 20px;
-  padding: min(3em, 15%);
+  padding: min(1em, 10%);
+  display: flex;
 }
 
 #side-bar{
@@ -51,20 +124,36 @@ main p{
   overflow-y: scroll;
   top: 0;
   align-items: start;
+  transition: all 300ms ease-in-out;
+  overflow: hidden;
 }
 
-#side-bar ul{
+#side-bar.close {
+   padding: 5px;
+   width: 55px;
+}
+
+#side-bar.close .logo{
+   display: none;  
+}
+
+#side-bar.close #toggle-btn{
+  display: flex;
+  justify-self: start;
+}
+
+#side-bar ul {
   list-style: none;
 }
 
 #side-bar > ul > li:first-child{
-  display: flex;
-  justify-content: flex-end;
+   display: flex; 
   margin-bottom: 16px;
 }
 
 .logo{
   font-weight: 600;
+   flex-grow: 1; 
 }
 
 #side-bar ul li.active a{
@@ -110,7 +199,8 @@ flex-grow: 1;
 
  .sub-menu a{
   margin-left: 1.5em;
- 
+   font-size: .9rem;
+   font-weight: 700;
 }
 
 #side-bar .sub-menu.show{
@@ -126,5 +216,18 @@ flex-grow: 1;
 
 .rotate svg:last-child{
   rotate: -180deg;
+}
+
+#toggle-btn{
+   /* margin-left: auto; */
+  padding: .5em;
+  border: 2px solid black;
+  border-radius: .5em;
+  background-color: none;
+  cursor: pointer;
+}
+
+#toggle-btn svg{
+  transition: rotate 150ms ease;
 }
 
