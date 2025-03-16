@@ -6,11 +6,11 @@
   <title> Pascal's Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="">
   <nav id="side-bar">
      <ul>
-      <li >
-        <span class="logo">Pascal</span>
+      <li class="navigator">
+        <span class="logo">Pascal</span> 
         <button onclick="toggleSideBar()" id="toggle-btn">
            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z"/></svg>
         </button>
@@ -82,10 +82,11 @@
 
   <main>
 
-    
+
    <header class="d-flex align-center justify-space-btw">
     <h5>frontend dev </h5>
 
+    
     <button class="d-flex align-center fwb">
       <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
 
@@ -93,11 +94,21 @@
         Resume
       </span>
     </button>
+
+    <button class="theme-icons-cont">
+          <!-- dark mode -->
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M481.15-140q-141.66 0-240.83-99.17-99.16-99.16-99.16-240.83 0-135.77 92.11-232.88 92.11-97.12 225.57-105.2 8.62 0 16.93.62 8.3.62 16.3 1.85-30.61 28.61-48.76 69.15-18.16 40.54-18.16 86.46 0 98.33 68.84 167.17Q562.82-424 661.15-424q46.54 0 86.77-18.15 40.23-18.16 68.46-48.77 1.23 8 1.85 16.31.61 8.3.61 16.92-7.69 133.46-104.8 225.57Q616.92-140 481.15-140Z"/></svg>
+
+      <!-- light mode svg -->
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+  
+    </button>
+
    </header>
 
 
    <!-- ==== INTRO SECTION ==== -->
-    <section class="container justify-space-btw align-center">
+    <section class="intro-container container justify-space-btw align-center">
       <!-- this div contains summary content about me -->
        <div class="intro-content">
         <h1>

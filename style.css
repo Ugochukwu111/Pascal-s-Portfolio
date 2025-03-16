@@ -9,17 +9,31 @@
 }
 
 :root {
-  --heading-font: 'Poppins', sans-serif;
-  --body-font: 'Inter', sans-serif;
-  --primary-color: #333; /* Adjust as needed */
-  --secondary-color: #555; /* Adjust as needed */
+  --dk-pry-clr :#071541;
+  --pry-clr :#0a2472;
+  --links-pry-clr :#25429b;
+  --text-shadow:#5370ceb6;
+  --bkg-clr:#f4f1f1;
+}
+
+.darkmode{
+   --dk-pry-clr: #cbd5f1; /* Lighter primary color for dark mode */
+  --pry-clr: #90a0d9; /* Softer blue shade */
+  --links-pry-clr: #0c44ff; /* Adjusted for visibility */
+  --text-shadow: #1a2a5eb6; /* Darker shadow effect */
+  --bkg-clr: #0a0e1a; 
+}
+
+html{
+  background-color: var();
 }
 
 body {
   font-family: var(--body-font);
+  background-color: var(--bkg-clr);
   font-size: 16px;
   line-height: 1.6;
-  color: var(--primary-color);
+  color: var(--pry-clr);
   background-color: #f9f9f9;
   min-height: 100svh;
   min-height: 100dvh;
@@ -30,7 +44,7 @@ body {
 /* Fluid typography for headings */
  h1 {
   font-size: clamp(2rem, 5vw, 2.5rem);
-  letter-spacing: .2rem;
+  letter-spacing: .05rem;
 } /* Adjusts between 2rem and 3rem based on viewport width */
 
 
@@ -60,6 +74,33 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Arial', sans-serif;
   margin-bottom: 0.5em;
 }
+
+a{
+  color: var(--links-pry-clr);
+  font-weight: bold;
+}
+
+.theme-icons-cont{
+   width: 60px;
+   aspect-ratio: 1;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.theme-icons-cont svg:last-child{
+  display: none;
+}
+
+.darkmode .theme-icons-cont svg:first-child{
+  display: none;
+}
+
+.darkmode .theme-icons-cont svg:last-child{
+  display: block;
+}
+
 
 .img-container{
  width: clamp(200px, 50vw, 300px);
@@ -141,12 +182,13 @@ main{
   padding: min(10px,3%);
   padding-top: 0;
   padding-left: 1em;
+  background-color: var(--bkg-clr);
   /* width: 1fr; */
   /* min-width: 20rem; */
 }
 
 main p{
-  color: rgb(52, 41, 41);
+  color: var(--pry-clr);
 }
 
 header{
@@ -158,6 +200,17 @@ header{
   margin-top: .2em;
    padding: .8em 1em;
    border-radius: 1.5rem;
+   background-color: var(--bkg-clr);
+   z-index: 999;
+}
+
+button{
+  background-color: transparent;
+  transition: all 300ms ease;
+}
+
+button:hover{
+  background-color: rgba(23, 32, 71, 0.61);
 }
 
 header > button{
@@ -166,17 +219,20 @@ header > button{
   border: none;
   cursor: pointer;
   transition: all 250ms ease-in;
+  color: var(--pry-clr);
+
 }
 
-header > button:active{
-   transform: scale(.9);
+
+button svg{
+  fill: var(--dk-pry-clr);
 }
 
 .container{
   border: 1px solid grey;
   border-radius: 1rem;
   margin-bottom: 20px;
-  padding: min(1em, 10%);
+  padding: min(1.5em, 10%);
   display: flex;
 }
 
@@ -184,13 +240,14 @@ header > button:active{
   height: 100svh;
   width: 230px;
   padding: 5px 1em;
-  border-right: 1px solid red;
+  border-right: 1px solid  var(--dk-pry-clr);
   position: sticky;
   overflow-y: scroll;
   top: 0;
   align-items: start;
   transition: all 300ms ease-in-out;
   overflow: hidden;
+  background-color: var(--bkg-clr);
 }
 
 #side-bar.close {
@@ -222,7 +279,7 @@ header > button:active{
 }
 
 #side-bar ul li.active a{
-   color: red;
+   color: var(--dk-pry-clr);
 }
 
 #side-bar a, #sidebar, .dropdown-btn, #sidebar, .logo{
@@ -245,12 +302,15 @@ header > button:active{
 
 #side-bar svg{
   flex-shrink: 0;
-  fill: rgb(7, 115, 211);
+  fill: var(--dk-pry-clr);
 }
 
 #side-bar span a,  .dropdown-btn span{
 flex-grow: 1;
+
 }
+
+
 
 #side-bar a:hover, 
  .dropdown-btn:hover{
@@ -286,7 +346,7 @@ flex-grow: 1;
 #toggle-btn{
    /* margin-left: auto; */
   padding: .5em;
-  border: 2px solid black;
+  border: 2px solid var(--pry-clr);
   border-radius: .5em;
   background-color: none;
   cursor: pointer;
@@ -301,9 +361,9 @@ flex-grow: 1;
 }
 
 .Techstack-imgs-container >*{
-  width: 100px;
+  width: clamp(60px, 50vw, 100px);
   aspect-ratio: 1;
-  margin-inline: .5em;
+  margin: .5em;
   transition: all 250ms ease-in-out;
 }
 
@@ -325,13 +385,13 @@ flex-grow: 1;
 }
 
 .projecct-grid-container >*{
-  border: 2px solid red;
+  border: 2px solid var(--dk-pry-clr);
   padding: .5em;
   border-radius: .5em;
 }
 .project-img{
   width: 100%;
-  background-color: rgb(81, 88, 86);
+  background-color: var(--dk-pry-clr);
   height: 200px;
   border-radius: inherit;
 }
@@ -346,7 +406,7 @@ flex-grow: 1;
 .about-me-profile-photo{
   width: 150px;
   aspect-ratio: 1;
-  background-color: rebeccapurple;
+  background-color: var(--dk-pry-clr);
   border-radius: 50%;
 }
 
@@ -369,7 +429,7 @@ flex-grow: 1;
    aspect-ratio: 1;
    border-radius: 50%;
    border: none;
-   border: 2px solid black;
+   border: 2px solid var(--dk-pry-clr);
    align-items: center;
    display: flex;
    justify-content: center;
@@ -379,4 +439,111 @@ flex-grow: 1;
 .contact-me-designer-info-cont{
   justify-content: space-around;
   width: 100%;
+}
+
+@media(max-width: 800px){
+  body{
+    grid-template-columns: 1fr;
+  }
+
+  section{
+    border: none;
+    padding: 0;
+  }
+
+  #side-bar{
+     height: 60px;
+     width: 100%;
+     border-right: none;
+     border-top: 1px solid var(--dk-pry-clr);
+     position: fixed;
+     top: unset;
+     bottom: 0;
+  }
+
+  
+
+  #side-bar ul li span .dropdown-btn, #toggle-btn, svg:last-child{
+    /* display: none; */
+  }
+
+  .navigator{
+    width: fit-content;
+    display: none;
+  }
+
+  #toggle-btn {
+    display: inline;
+    align-items: center;
+    margin-top: .6em;
+    height: 50px;
+    padding: 0 .5em;
+  }
+
+  #side-bar ul {
+    padding-bottom: 1em;
+    overflow: scroll;
+    align-items: center;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+  }
+  #side-bar  li {
+    padding: 0;
+    height: 100%;
+    /* width: fit-content; */
+
+  }
+
+  #side-bar li span  {
+    display: none;
+  }
+   .dropdown-btn  {
+     width: 60px; 
+    aspect-ratio: 1;
+     padding: 0; 
+    border-radius: 0;
+    justify-content: center;
+  } 
+  ul li .sub-menu.show{
+    position: fixed;
+    bottom: 80px;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .intro-container{
+    flex-direction: column-reverse;
+  }
+  .intro-content{
+    text-align: center;
+    margin: 1em 0;
+    line-height: 1.3;
+  }
+
+  .Techstack-imgs-container{
+     flex-wrap: wrap;
+  }
+
+  .projecct-grid-container{
+    padding: 1em 0;
+  }
+
+  .contact-me-designer-info-cont a{
+    flex-wrap: wrap;
+    width: 50px;
+
+  }
+
+  .contact-me-designer-info-cont{
+    flex-direction: column;
+    padding-bottom: 4em; 
+    /* the padding bottom there is to not to hide the content when the
+    mobile sidebar opens */
+  }
+  .contact-me-designer-info-cont >*{
+    margin: 1em 0;
+    text-align: center;
+  }
 }
