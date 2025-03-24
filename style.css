@@ -495,12 +495,6 @@ flex-grow: 1;
      bottom: 0;
   }
 
-  
-
-  #side-bar ul li span .dropdown-btn, #toggle-btn, svg:last-child{
-    /* display: none; */
-  }
-
   .navigator{
     width: fit-content;
     display: none;
