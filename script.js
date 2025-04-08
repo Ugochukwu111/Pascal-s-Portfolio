@@ -47,4 +47,27 @@ if (darkmode === 'active') enableDarkmode()
 
 
 
+// my header hide and shoe on scroll
+const navbar = document.getElementById("header");
+let scrollTimeout;
 
+window.addEventListener("scroll", () => {
+  // Show navbar on scroll
+  navbar.style.opacity = "1";
+  navbar.style.pointerEvents = "auto";
+
+    // If at the very top of the page, keep navbar visible
+    if (window.scrollY === 0) {
+      clearTimeout(scrollTimeout);
+      return; // Exit early — don't set fade-out timeout
+    }
+
+  // Clear previous timeout
+  clearTimeout(scrollTimeout);
+
+  // Hide again after 1.5 seconds of no scroll
+  scrollTimeout = setTimeout(() => {
+    navbar.style.opacity = "0";
+    navbar.style.pointerEvents = "none";
+  }, 1500);
+});
