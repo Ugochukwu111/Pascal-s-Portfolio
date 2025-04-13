@@ -71,3 +71,109 @@ window.addEventListener("scroll", () => {
     navbar.style.pointerEvents = "none";
   }, 1500);
 });
+
+
+// js for my projects!!!
+const personalProject = [
+   {
+    img: 'images/multistepProjectpicture.png',
+    link: 'https://multi-step-form-one-alpha.vercel.app/',
+    name: 'Advanced Multi-Step Form',
+    stack: 'HTML CSS JS',
+    description: 'lorem',
+   },
+   {
+    img: 'images/multistepProjectpicture.png',
+    link: 'https://multi-step-form-one-alpha.vercel.app/',
+    name: 'Advanced Multi-Step Form',
+    stack: 'HTML CSS JS',
+    description: 'lorem',
+   },
+   {
+    img: 'images/multistepProjectpicture.png',
+    link: 'https://multi-step-form-one-alpha.vercel.app/',
+    name: 'Advanced Multi-Step Form',
+    stack: 'HTML CSS JS',
+    description: 'lorem',
+   },
+   {
+    img: 'images/multistepProjectpicture.png',
+    link: 'https://multi-step-form-one-alpha.vercel.app/',
+    name: 'Advanced Multi-Step Form',
+    stack: 'HTML CSS JS',
+    description: 'lorem',
+   }
+];
+
+const miniProject = [
+  {
+   img: 'images/todo-list-pic.png',
+   link: 'https://ugochukwu111.github.io/todo-list/',
+   name: 'Simple Todo List',
+   stack: 'HTML CSS JS',
+   description: 'lorem',
+  },
+  {
+   img: 'images/interactive-color-game-pic.png',
+   link: 'https://color-game-jet-eta.vercel.app',
+   name: 'Interactive Color Game',
+   stack: 'HTML CSS JS',
+   description: 'lorem',
+  },
+  {
+   img: 'images/web3-project-img.png',
+   link: 'https://ugochukwu111.github.io/web3newspage/',
+   name: 'Project Web 3',
+   stack: 'HTML CSS JS',
+   description: 'lorem',
+  }
+];
+
+const collaborationProject = [
+  {
+   img: '',
+   link: '',
+   name: '',
+   stack: 'HTML CSS JS',
+   description: 'lorem',
+  },
+  {
+   img: '',
+   link: '',
+   name: '',
+   stack: 'HTML CSS JS',
+   description: 'lorem',
+  },
+];
+
+
+
+
+function displayProject(projectName, projectContainer ){
+let html = '';
+projectName.forEach((project)=>{
+    
+    html += ` 
+            <div>
+              <div class="project-img">
+                <img  loading="lazy" src="${project.img}" alt="${project.name}">
+              </div>
+              <div>
+                <p>
+                  <span><a class="project-name-link" target="_blank" href="${project.link}">${project.name}</a></span>
+                  <span class="project-stack">Stack: &nbsp;${project.stack}</span>
+                  ${
+                    project.description
+                  }
+                  
+                </p>
+              </div>
+            </div> `
+})
+
+document.querySelector(`${projectContainer}`).innerHTML = html;//.js-personal-projects-container
+}
+
+displayProject(personalProject, '.js-personal-projects-container');
+displayProject(miniProject, '.js-mini-project-container');
+displayProject(collaborationProject, '.js-collaboration-project-container');

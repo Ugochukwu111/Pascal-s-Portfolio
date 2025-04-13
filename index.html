@@ -8,7 +8,7 @@
 </head>
 <body class="">
   <nav id="side-bar">
-     <ul>
+     <ul class="mobile-list-container">
       <li class="navigator">
         <span class="logo">Pascal</span> 
         <button onclick="toggleSideBar()" id="toggle-btn">
@@ -32,47 +32,29 @@
       </li>
 
       <li >
-        <button onclick="toggleSubMenu(this)" class="dropdown-btn">
-           <!-- folder icon -->
-           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm0-80h640v-440H160v440Zm240-520h160v-80H400v80ZM160-200v-440 440Z"/></svg>
-          <span class="link-clr">Projects</span>
-               <!-- drop down icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
-        </button>
-          <ul class="sub-menu">
-            <div>
-              <li><a href="#mini-projects">Mini-Projects</a></li>
-              <li><a href="#personal-projects">Personal-Projects</a></li>
-              <li><a href="#collaboration-projects">Collaborations</a></li>
-            </div>
-           
-          </ul>
+         <a href="">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm0-80h640v-440H160v440Zm240-520h160v-80H400v80ZM160-200v-440 440Z"/></svg>
+          
+          <span>
+             Projects
+          </span>
+         </a>
       </li>
 
       <li>
-        <button onclick="toggleSubMenu(this)"  class="dropdown-btn">
-           <!-- folder icon -->
-           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M560-520h280v-200H560v200Zm140-50-100-70v-40l100 70 100-70v40l-100 70ZM80-120q-33 0-56.5-23.5T0-200v-560q0-33 23.5-56.5T80-840h800q33 0 56.5 23.5T960-760v560q0 33-23.5 56.5T880-120H80Zm556-80h244v-560H80v560h4q42-75 116-117.5T360-360q86 0 160 42.5T636-200ZM360-400q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35ZM182-200h356q-34-38-80.5-59T360-280q-51 0-97 21t-81 59Zm178-280q-17 0-28.5-11.5T320-520q0-17 11.5-28.5T360-560q17 0 28.5 11.5T400-520q0 17-11.5 28.5T360-480Zm120 0Z"/></svg>
-          <span class="link-clr">Contatct</span>
-               <!-- drop down icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
-        </button>
-          <ul class="sub-menu">
-            <div>
-              <li><a href="https://www.linkedin.com/in/pascal001/">Linkedin</a></li>
-            <li><a href="#">whatsapp</a></li>
-            <li><a target="_blank" href="https://x.com/Pas_Cal_001">X</a></li>
-            <li><a href="mailto:pascaljoseph729@gmail.com">Mail</a></li>
-            </div>
-            
-          </ul>
+         <a href="">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+          <span>
+            Contact
+          </span>
+         </a>
       </li>
 
 
       <li >
         <a href="#about-me">
           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
-          <span>About Me</span>
+          <span>About</span>
         </a>
       </li>
 
@@ -81,28 +63,27 @@
   </nav>
 
   <main>
-
-
    <header id="header" class="d-flex align-center justify-space-btw">
-    <h5>frontend dev </h5>
+      <h5>
+        frontend dev
+      </h5>
 
+      <button class="d-flex align-center fwb">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
+
+        <span>
+          Resume
+        </span>
+      </button>
+
+      <button class="theme-icons-cont">
+            <!-- dark mode -->
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M481.15-140q-141.66 0-240.83-99.17-99.16-99.16-99.16-240.83 0-135.77 92.11-232.88 92.11-97.12 225.57-105.2 8.62 0 16.93.62 8.3.62 16.3 1.85-30.61 28.61-48.76 69.15-18.16 40.54-18.16 86.46 0 98.33 68.84 167.17Q562.82-424 661.15-424q46.54 0 86.77-18.15 40.23-18.16 68.46-48.77 1.23 8 1.85 16.31.61 8.3.61 16.92-7.69 133.46-104.8 225.57Q616.92-140 481.15-140Z"/></svg>
+
+        <!-- light mode svg -->
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
     
-    <button class="d-flex align-center fwb">
-      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
-
-      <span>
-        Resume
-      </span>
-    </button>
-
-    <button class="theme-icons-cont">
-          <!-- dark mode -->
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M481.15-140q-141.66 0-240.83-99.17-99.16-99.16-99.16-240.83 0-135.77 92.11-232.88 92.11-97.12 225.57-105.2 8.62 0 16.93.62 8.3.62 16.3 1.85-30.61 28.61-48.76 69.15-18.16 40.54-18.16 86.46 0 98.33 68.84 167.17Q562.82-424 661.15-424q46.54 0 86.77-18.15 40.23-18.16 68.46-48.77 1.23 8 1.85 16.31.61 8.3.61 16.92-7.69 133.46-104.8 225.57Q616.92-140 481.15-140Z"/></svg>
-
-      <!-- light mode svg -->
-      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
-  
-    </button>
+      </button>
 
    </header>
 
@@ -114,9 +95,9 @@
         <h1>
           Good day! my name is 
           <span class="d-block">Joseph Pascal</span>
-          i am an 
+          i am a
           <span class="d-block">
-            Aspiring frontend Web Developer
+            Frontend Web Developer.
           </span> 
         </h1>
 
@@ -153,48 +134,8 @@
         <h3>projects</h3>
         <h4>Personal-Projects</h4>
         <!-- grid box to display my personal projects -->
-        <div  class="projecct-grid-container">
-             <div>
-              <div class="project-img">
-                <img height="100%" loading="lazy" width="100%" src="" alt="project picture">
-              </div>
-              <div>
-                <p>
-                  <span>Project name link</span>
-                  <span>Project github link</span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ipsum sed voluptatibus, accusamus deleniti repudiandae incidunt vitae, atque perferendis ducimus mollitia itaque delectus nostrum modi cumque corporis animi, eligendi quos?
-                  
-                </p>
-              </div>
-             </div>  
-
-             <div>
-              <div class="project-img">
-                <img loading="lazy"  src="" alt="project picture">
-              </div>
-              <div>
-                <p>
-                  <span>Project name link</span>
-                  <span>Project github link</span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ipsum sed voluptatibus, accusamus deleniti repudiandae incidunt vitae, atque perferendis ducimus mollitia itaque delectus nostrum modi cumque corporis animi, eligendi quos?
-                  
-                </p>
-              </div>
-             </div>  
-
-             <div>
-              <div class="project-img">
-                <img height="100%" loading="lazy" width="100%" src="images/multistepProjectpicture.png" alt="project picture">
-              </div>
-              <div>
-                <p>
-                  <span><a class="project-name-link" target="_blank" href="https://multi-step-form-one-alpha.vercel.app/">Advance Multi-Step Form</a></span>
-                  <span class="project-stack">Stack: &nbsp; HTML CSS JS</span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ipsum sed voluptatibus, accusamus deleniti repudiandae incidunt vitae, atque perferendis ducimus mollitia itaque delectus nostrum modi cumque corporis animi, eligendi quos?
-                  
-                </p>
-              </div>
-             </div>  
+        <div  class="projecct-grid-container js-personal-projects-container ">
+              <!-- generated with js -->
         </div>
       </section>
 
@@ -203,48 +144,8 @@
         <h3>projects</h3>
         <h4>Collaborations</h4>
         <!-- grid box to display my personal projects -->
-        <div class="projecct-grid-container">
-             <div>
-              <div class="project-img">
-                <img loading="lazy"  src="" alt="project picture">
-              </div>
-              <div>
-                <p>
-                  <span>Project name link</span>
-                  <span>Project github link</span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ipsum sed voluptatibus, accusamus deleniti repudiandae incidunt vitae, atque perferendis ducimus mollitia itaque delectus nostrum modi cumque corporis animi, eligendi quos?
-                  
-                </p>
-              </div>
-             </div>  
-
-             <div>
-              <div class="project-img">
-                <img  loading="lazy"  src="" alt="project picture">
-              </div>
-              <div>
-                <p>
-                  <span >Project name link</span>
-                  <span >Project github link</span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ipsum sed voluptatibus, accusamus deleniti repudiandae incidunt vitae, atque perferendis ducimus mollitia itaque delectus nostrum modi cumque corporis animi, eligendi quos?
-                  
-                </p>
-              </div>
-             </div>  
-
-             <div>
-              <div class="project-img">
-                <img loading="lazy" src="" alt="project picture">
-              </div>
-              <div>
-                <p>
-                  <span>Project name link</span>
-                  <span>Project github link</span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ipsum sed voluptatibus, accusamus deleniti repudiandae incidunt vitae, atque perferendis ducimus mollitia itaque delectus nostrum modi cumque corporis animi, eligendi quos?
-                  
-                </p>
-              </div>
-             </div>  
+        <div class="projecct-grid-container js-collaboration-project-container">
+            <!-- generated with js -->
         </div>
       </section>
 
@@ -253,49 +154,8 @@
         <h3>projects</h3>
         <h4>Mini- Projects</h4>
         <!-- grid box to display my personal projects -->
-        <div class="projecct-grid-container">
-             <div>
-              <div class="project-img">
-                <img loading="lazy"  src="images/todo-list-pic.png" alt="project picture">
-              </div>
-              <div>
-                <p>
-                  <span><a href="https://ugochukwu111.github.io/todo-list/
-                    ">Simple Todo List</a></span>
-                  <span class="project-stack">Stack: &nbsp; HTML CSS JS</span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ipsum sed voluptatibus, accusamus deleniti repudiandae incidunt vitae, atque perferendis ducimus mollitia itaque delectus nostrum modi cumque corporis animi, eligendi quos?
-                  
-                </p>
-              </div>
-             </div>  
-
-             <div>
-              <div class="project-img">
-                <img loading="lazy" src="images/interactive-color-game-pic.png" alt="project picture">
-              </div>
-              <div>
-                <p>
-                  <span><a href="https://color-game-jet-eta.vercel.app">Interactive Color Game</a></span>
-                  <span class="project-stack">Stack: &nbsp; HTML CSS JS</span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ipsum sed voluptatibus, accusamus deleniti repudiandae incidunt vitae, atque perferendis ducimus mollitia itaque delectus nostrum modi cumque corporis animi, eligendi quos?
-                  
-                </p>
-              </div>
-             </div>  
-
-             <div>
-              <div class="project-img">
-                <img loading="lazy" src="images/web3-project-img.png" alt="project picture">
-              </div>
-              <div>
-                <p>
-                  <span><a href="https://ugochukwu111.github.io/web3newspage/">Project Web 3</a></span>
-                  <span class="project-stack">Stack: &nbsp; HTML CSS JS</span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ipsum sed voluptatibus, accusamus deleniti repudiandae incidunt vitae, atque perferendis ducimus mollitia itaque delectus nostrum modi cumque corporis animi, eligendi quos?
-                  
-                </p>
-              </div>
-             </div>  
+        <div class="projecct-grid-container js-mini-project-container">
+              <!-- generated with js -->
         </div>
       </section>
 
@@ -358,7 +218,7 @@
               <p>This portfolio was inspired by Name </p>
               <p>Developed and designed by Pascal</p>
               <p>
-                &copy; 2025 pascal <i>21st Century Software</i>
+                &copy; 2025 pascal <i>21<sup>st</sup>Century Software</i>
               </p>
             </div>
       </div>
