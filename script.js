@@ -131,9 +131,9 @@ const miniProject = [
 
 const collaborationProject = [
   {
-   img: '',
-   link: '',
-   name: '',
+   img: 'images/opencart-logo.png',
+   link: 'https://github.com/21st-centuary-codes/Open-cart',
+   name: 'Open-cart',
    stack: 'HTML CSS JS',
    description: 'lorem',
   },
