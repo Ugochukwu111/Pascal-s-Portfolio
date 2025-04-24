@@ -94,14 +94,7 @@ const personalProject = [
     link: 'https://multi-step-form-one-alpha.vercel.app/',
     name: 'Advanced Multi-Step Form',
     stack: 'HTML CSS JS',
-    description: 'lorem',
-   },
-   {
-    img: 'images/multistepProjectpicture.png',
-    link: 'https://multi-step-form-one-alpha.vercel.app/',
-    name: 'Advanced Multi-Step Form',
-    stack: 'HTML CSS JS',
-    description: 'lorem',
+    description: 'An advanced Frontend Mentor challenge where I built a dynamic, accessible multi-step form with validation and state management using JavaScript.',
    }
 ];
 
@@ -111,21 +104,21 @@ const miniProject = [
    link: 'https://ugochukwu111.github.io/todo-list/',
    name: 'Simple Todo List',
    stack: 'HTML CSS JS',
-   description: 'lorem',
+   description: 'This project is a basic task manager built with vanilla JavaScript. It helped me understand core concepts like DOM manipulation, event listeners, and working with localStorage to store tasks. It was a great way to strengthen my understanding of interactivity and state management in the browser.',
   },
   {
    img: 'images/interactive-color-game-pic.png',
    link: 'https://color-game-jet-eta.vercel.app',
    name: 'Interactive Color Game',
    stack: 'HTML CSS JS',
-   description: 'lorem',
+   description: 'A fun mini-game where players guess the correct color based on RGB values. I built this to sharpen my understanding of   DOM manipulation, event listeners, and random color generation using JavaScript. It helped me grasp core logic building,dynamic styling, and user interaction patterns in a hands-on way.',
   },
   {
    img: 'images/web3-project-img.png',
    link: 'https://ugochukwu111.github.io/web3newspage/',
    name: 'Project Web 3',
    stack: 'HTML CSS JS',
-   description: 'lorem',
+   description: 'A responsive Frontend Mentor challenge that sharpened my skills in layout, responsiveness, and translating Figma designs into clean, semantic HTML and CSS.',
   }
 ];
 
@@ -135,8 +128,9 @@ const collaborationProject = [
    link: 'https://github.com/21st-centuary-codes/Open-cart',
    name: 'Open-cart',
    stack: 'HTML CSS JS',
-   description: 'lorem',
+   description: 'I am leading an ongoing project to develop an OpenCart eCommerce website, where I came up with the idea. My role is focused on the frontend, and I’m working with a team of developers to bring the site to life. The project involves collaboration through Git and GitHub, where I oversee version control and contribute to the overall design and development process. This experience has allowed me to strengthen my understanding of working with developers on a project and managing tasks efficiently.',
   },
+  
   {
    img: '',
    link: '',
@@ -154,9 +148,9 @@ let html = '';
 projectName.forEach((project)=>{
     
     html += ` 
-            <div>
+            <div >
               <div class="project-img">
-                <img  loading="lazy" src="${project.img}" alt="${project.name}">
+                <img  loading="lazy" src="${project.img}" alt="project-img">
               </div>
               <div>
                 <p>
@@ -177,3 +171,12 @@ document.querySelector(`${projectContainer}`).innerHTML = html;//.js-personal-pr
 displayProject(personalProject, '.js-personal-projects-container');
 displayProject(miniProject, '.js-mini-project-container');
 displayProject(collaborationProject, '.js-collaboration-project-container');
+
+
+// ==== ANIMATION
+AOS.init({
+  duration: 1000, // Duration of animations
+  offset: 200, // Trigger animation when the element is 200px in view
+  once: true, // Trigger animation only once
+  easing: 'ease-in-out', // Easing for animation
+});
