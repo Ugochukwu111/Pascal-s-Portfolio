@@ -83,11 +83,11 @@ const personalProject = [
     description: 'lorem',
    },
    {
-    img: 'images/multistepProjectpicture.png',
-    link: 'https://multi-step-form-one-alpha.vercel.app/',
-    name: 'Advanced Multi-Step Form',
+    img: 'images/kinematics-project-pic.png',
+    link: 'https://kinematics-tutorials.vercel.app/',
+    name: 'Kinematics Tutorials Website',
     stack: 'HTML CSS JS',
-    description: 'lorem',
+    description: 'I designed and developed a simple, user-friendly website to help students easily find and attend a specific tutorial session on Kinematics. The site provides clear information about the tutorial, including the topic focus, venue details, and a direct link to the location via Google Maps.'
    },
    {
     img: 'images/multistepProjectpicture.png',
@@ -126,7 +126,7 @@ const collaborationProject = [
   {
    img: 'images/opencart-logo.png',
    link: 'https://github.com/21st-centuary-codes/Open-cart',
-   name: 'Open-cart',
+   name: 'Open-cart Website',
    stack: 'HTML CSS JS',
    description: 'I am leading an ongoing project to develop an OpenCart eCommerce website, where I came up with the idea. My role is focused on the frontend, and I’m working with a team of developers to bring the site to life. The project involves collaboration through Git and GitHub, where I oversee version control and contribute to the overall design and development process. This experience has allowed me to strengthen my understanding of working with developers on a project and managing tasks efficiently.',
   },
