@@ -77,7 +77,7 @@ window.addEventListener("scroll", () => {
 const personalProject = [
    {
     img: 'images/questionProject.png',
-    link: 'https://multi-step-form-one-alpha.vercel.app/',
+    link: 'https://quiz-campus.vercel.app/',
     name: 'Course Qiuzes',
     stack: 'HTML CSS JS',
     description: '[Ongoing]. This project is a simple quiz app that allows users to take quizzes on various topics. It was built using HTML, CSS, and JavaScript. The app features a user-friendly interface, multiple-choice questions, and instant feedback on answers. I created this project to practice my skills in web development and to provide a fun way for users to test their knowledge on different subjects.',
