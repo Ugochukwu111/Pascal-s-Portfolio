@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,239 +9,242 @@
   <!-- AOS CSS -->
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
-<body class="">
-  <nav id="side-bar">
-     <ul class="mobile-list-container">
-      <li class="navigator">
-        <span class="logo">Pascal 🚀</span> 
-        <button onclick="toggleSideBar()" id="toggle-btn">
-           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z"/></svg>
-        </button>
-      </li>
-      <li class="">
-        <a href="index.html">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
-          <span>Home</span>
-        </a>
-      </li>
+<body class="darkmode">
 
-      <li>   
-        <a href="#tecchstack">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M520-600v-240h320v240H520ZM120-440v-400h320v400H120Zm400 320v-400h320v400H520Zm-400 0v-240h320v240H120Zm80-400h160v-240H200v240Zm400 320h160v-240H600v240Zm0-480h160v-80H600v80ZM200-200h160v-80H200v80Zm160-320Zm240-160Zm0 240ZM360-280Z"/></svg>
-          <span>
-            Techstack
-          </span>
-        </a>       
-      </li>
-
-      <li >
-         <a href="">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm0-80h640v-440H160v440Zm240-520h160v-80H400v80ZM160-200v-440 440Z"/></svg>
-          
-          <span>
-             Projects
-          </span>
-         </a>
-      </li>
-
-      <li>
-         <a href="">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
-          <span>
-            Contact
-          </span>
-         </a>
-      </li>
-
-
-      <li >
-        <a href="#about-me">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
-          <span>About</span>
-        </a>
-      </li>
-
-     </ul>
-
-  </nav>
-
-  <main>
-   <header id="header" class="d-flex align-center justify-space-btw">
-      <h5>
-        frontend dev
-      </h5>
-
-      <a class="download-resume-btn"  href="my resume.pdf" download="Pascal Joseph Resume.pdf">
-        <button class="d-flex align-center fwb">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
-          <span>
-            Resume
-          </span>
-        </button>
-     </a>
-      <button class="theme-icons-cont">
-            <!-- dark mode -->
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M481.15-140q-141.66 0-240.83-99.17-99.16-99.16-99.16-240.83 0-135.77 92.11-232.88 92.11-97.12 225.57-105.2 8.62 0 16.93.62 8.3.62 16.3 1.85-30.61 28.61-48.76 69.15-18.16 40.54-18.16 86.46 0 98.33 68.84 167.17Q562.82-424 661.15-424q46.54 0 86.77-18.15 40.23-18.16 68.46-48.77 1.23 8 1.85 16.31.61 8.3.61 16.92-7.69 133.46-104.8 225.57Q616.92-140 481.15-140Z"/></svg>
-
-        <!-- light mode svg -->
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
-    
-      </button>
-
-   </header>
-
-
-   <!-- ==== INTRO SECTION ==== -->
-    <section class="intro-section-container d-flex flex-column">
-      <div class="d-flex justify-space-btw align-center intro-container">
-          <!-- this div contains summary content about me -->
-          <div class="intro-content ">
-            <h1>
-              Good day! My name is 
-              <span class="d-block">Joseph Pascal.</span>
-              I am a
-              <span class="d-block">
-                Frontend Web Developer.
-              </span> 
-            </h1>
-
-            <a href="#about-me">
-              <small>
-                <u>Click to read more about me🤝</u>
-              </small>
+      <nav id="side-bar">
+        <ul class="mobile-list-container">
+          <li class="navigator">
+            <span class="logo">Pascal 🚀</span> 
+            <button onclick="toggleSideBar()" id="toggle-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z"/></svg>
+            </button>
+          </li>
+          <li class="">
+            <a href="index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+              <span>Home</span>
             </a>
+          </li>
+
+          <li>   
+            <a href="#tecchstack">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M520-600v-240h320v240H520ZM120-440v-400h320v400H120Zm400 320v-400h320v400H520Zm-400 0v-240h320v240H120Zm80-400h160v-240H200v240Zm400 320h160v-240H600v240Zm0-480h160v-80H600v80ZM200-200h160v-80H200v80Zm160-320Zm240-160Zm0 240ZM360-280Z"/></svg>
+              <span>
+                Techstack
+              </span>
+            </a>       
+          </li>
+
+          <li >
+            <a href="#my-projects">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm0-80h640v-440H160v440Zm240-520h160v-80H400v80ZM160-200v-440 440Z"/></svg>
+              
+              <span>
+                Projects
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#contact-me">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+              <span>
+                Contact
+              </span>
+            </a>
+          </li>
+
+
+          <li >
+            <a href="#about-me">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+              <span>About</span>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <main>
+      <header id="header" class="d-flex align-center justify-space-btw">
+          <h5>
+            frontend dev
+          </h5>
+
+          <a class="download-resume-btn"  href="my resume.pdf" download="Pascal Joseph Resume.pdf">
+            <button class="d-flex align-center fwb">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
+              <span>
+                Resume
+              </span>
+            </button>
+        </a>
+          <button class="theme-icons-cont">
+                <!-- dark mode -->
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M481.15-140q-141.66 0-240.83-99.17-99.16-99.16-99.16-240.83 0-135.77 92.11-232.88 92.11-97.12 225.57-105.2 8.62 0 16.93.62 8.3.62 16.3 1.85-30.61 28.61-48.76 69.15-18.16 40.54-18.16 86.46 0 98.33 68.84 167.17Q562.82-424 661.15-424q46.54 0 86.77-18.15 40.23-18.16 68.46-48.77 1.23 8 1.85 16.31.61 8.3.61 16.92-7.69 133.46-104.8 225.57Q616.92-140 481.15-140Z"/></svg>
+
+            <!-- light mode svg -->
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+        
+          </button>
+
+      </header>
+
+
+      <!-- ==== INTRO SECTION ==== -->
+        <section class="intro-section-container d-flex flex-column">
+          <div class="d-flex justify-space-btw align-center intro-container">
+              <!-- this div contains summary content about me -->
+              <div class="intro-content ">
+                <h1>
+                  Good day! My name is 
+                  <span class="d-block">Joseph Pascal.</span>
+                  I am a
+                  <span class="d-block">
+                    Frontend Web Developer.
+                  </span> 
+                </h1>
+
+                <a href="#about-me">
+                  <small>
+                    <u>Click to read more about me🤝</u>
+                  </small>
+                </a>
+              </div>
+              
+              <!-- picture div -->
+              <figure class="img-container">
+                <img  src="images/profilepic.png" alt="profile-pic of pascal joseph">
+                <figcaption class="sr-only">Photo of Joseph Pascal, Frontend Developer</figcaption>
+              </figure>
           </div>
-          
-          <!-- picture div -->
-          <figure class="img-container">
-            <img  src="images/profilepic.png" alt="profile-pic of pascal joseph">
-            <figcaption class="sr-only">Photo of Joseph Pascal, Frontend Developer</figcaption>
-          </figure>
-      </div>
 
-      <!-- short intro about how i write code -->
-      <div class="d-flex justify-center">
-        <p class="text-center intro-description pd-S">
-          I focus on writing clean, scalable, maintainable, and accessible code. 
-          I'm constantly staying up to date with trends, new fixes, and the most effective ways to solve problems.
-          A programmer by nature. <span>Open for work || collaborations</span>
-        </p>
-      </div>
-    </section>
-
- <!-- ======== TECH STACK SECTION ======= -->
-     <section data-aos="zoom-in" id="tecchstack" class="container tech-stack Techstack-section">
-        <h2>my Techstack</h2> 
-           <br>
-       <div class="d-flex Techstack-imgs-container">
-        <div><img loading="lazy" src="images/images-removebg-preview.png" alt="html logo img"></div>
-        <div><img loading="lazy" src="images/css-logo-img-removebg-preview.png" alt="css logo img"></div>
-        <div><img loading="lazy" src="images/java-script-logo-img-removebg-preview.png" alt="js logo img"></div>
-        <div><img loading="lazy" src="images/git-hub-logo-img-removebg-preview.png" alt="git logo img"></div>
-        <div><img loading="lazy" src="images/github-logo-img-removebg-preview.png" alt="git hub logo img"></div>
-       </div>
-
-     </section>
-
-     <!-- ===== PERSONAL PROJECTS SECTION ==== -->
-      <section data-aos="fade-up" id="personal-projects" class="projects-section">
-        <h3>projects</h3>
-        <h4>Personal-Projects</h4>
-        <!-- grid box to display my personal projects -->
-        <div  class="projecct-grid-container js-personal-projects-container ">
-              <!-- generated with js -->
-        </div>
-      </section>
-
-      <!-- ====== COLLABORATION PROJECTS SECTION ==== -->
-      <section data-aos="fade-up" id="collaboration-projects" class="projects-section">
-        <h3>projects</h3>
-        <h4>Collaborations</h4>
-        <!-- grid box to display my personal projects -->
-        <div class="projecct-grid-container js-collaboration-project-container">
-            <!-- generated with js -->
-        </div>
-      </section>
-
-      <!-- ==MINI PROJECTS SECTION -->
-      <section data-aos="fade-up" id="mini-projects" class="projects-section">
-        <h3>projects</h3>
-        <h4>Mi
-          ni- Projects</h4>
-        <!-- grid box to display my personal projects -->
-        <div class="projecct-grid-container js-mini-project-container">
-              <!-- generated with js -->
-        </div>
-      </section>
-
-
-      <!-- ===== ABOUT ME SECTION ======= -->
-      <section data-aos="flip-left" 
-       id="about-me" class=" about d-flex align-center justify-center flex-column ">
-        <h3>
-          About Me
-        </h3>
-        <div class="d-flex align-center justify-center flex-column">
-          <!--owner of portfolio's img -->
-          <div class="about-me-profile-photo"><img src="" alt=""></div>
-        
-          <!-- content info about owner of portfolio -->
-           <div>
-            <p class="about-me-info pd-S">
-              I'm Pascal — someone who genuinely finds joy in helping others, whether it involves my skills or simply being there to support. I have a natural ability to identify, solve, and even anticipate problems across different areas, and I’m always committed to growing through experience — both mine and others'.
-
-              In software engineering, I focus on writing clean, efficient code that follows best practices and delivers real, effective results. I’m deeply inspired by software ideas because they offer limitless possibilities — and that’s where I thrive.
-              
-              I treat everyone with respect, not just because "you never know what tomorrow holds," but because it’s the right thing to do.
-              
-              Software is the new reality.
-              #21stCenturySoftware
+          <!-- short intro about how i write code -->
+          <div class="d-flex justify-center">
+            <p class="text-center intro-description pd-S">
+              I focus on writing clean, scalable, maintainable, and accessible code. 
+              I'm constantly staying up to date with trends, new fixes, and the most effective ways to solve problems.
+              A programmer by nature. <span>Open for work || collaborations</span>
             </p>
-           </div>
-        </div>
-      </section>
+          </div>
+        </section>
 
+    <!-- ======== TECH STACK SECTION ======= -->
+        <section data-aos="zoom-in" id="tecchstack" class="container tech-stack Techstack-section">
+            <h2>my Techstack</h2> 
+              <br>
+          <div class="d-flex Techstack-imgs-container">
+            <div><img loading="lazy" src="images/images-removebg-preview.png" alt="html logo img"></div>
+            <div><img loading="lazy" src="images/css-logo-img-removebg-preview.png" alt="css logo img"></div>
+            <div><img loading="lazy" src="images/java-script-logo-img-removebg-preview.png" alt="js logo img"></div>
+            <div><img loading="lazy" src="images/git-hub-logo-img-removebg-preview.png" alt="git logo img"></div>
+            <div><img loading="lazy" src="images/github-logo-img-removebg-preview.png" alt="git hub logo img"></div>
+          </div>
 
-      <!-- ======= contact section ===== -->
-      <section  data-aos="fade-down" class="d-flex justify-center align-center pd-M  flex-column">
-        <h5 class="text-center pd-S">Contact Me</h5>
-        <div class="d-flex align-center contact-me-designer-info-cont">
-        <div  class="Contact-icon-cocntainer align-center">
+        </section>
 
-          <!-- linkdin social link -->
-          <a class="" href="#">
-            <svg class="" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-          </a>
-
-          <!-- Mail social link -->
-          <a target="_blank" class="" href="mailto:pas111cal3@gmail.com">
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-          </a>
-
-
-          <!-- git hub 4 social link -->
-          <a target="_blank" class="" href="https://github.com/Ugochukwu111">
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-          </a>
-         
-          <!-- twitter social link -->
-          <a target="_blank" href="https://x.com/Pas_Cal_001" class="">
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
-          </a>
-        </div>
-        
-            <div>
-              <p>This portfolio was inspired by <a href="https://x.com/fjmellq">Filip J.M</a> </p>
-              <p>Developed and designed by Pascal</p>
-              <p>
-                &copy; 2025 pascal <i>21<sup>st</sup>Century Software</i>
-              </p>
+        <!-- ===== PERSONAL PROJECTS SECTION ==== -->
+          <section data-aos="fade-up" id="my-projects" class="projects-section">
+            <h3>projects</h3>
+            <h4>Personal-Projects</h4>
+            <!-- grid box to display my personal projects -->
+            <div  class="projecct-grid-container js-personal-projects-container ">
+                  <!-- generated with js -->
             </div>
-      </div>
-    </section>
+          </section>
 
-  </main>
+          <!-- ====== COLLABORATION PROJECTS SECTION ==== -->
+          <section data-aos="fade-up" id="collaboration-projects" class="projects-section">
+            <h3>projects</h3>
+            <h4>Collaborations</h4>
+            <!-- grid box to display my personal projects -->
+            <div class="projecct-grid-container js-collaboration-project-container">
+                <!-- generated with js -->
+            </div>
+          </section>
 
+          <!-- ==MINI PROJECTS SECTION -->
+          <section data-aos="fade-up" id="mini-projects" class="projects-section">
+            <h3>projects</h3>
+            <h4>
+              Mini- Projects
+            </h4>
+            <!-- grid box to display my personal projects -->
+            <div class="projecct-grid-container js-mini-project-container">
+                  <!-- generated with js -->
+            </div>
+          </section>
+
+
+          <!-- ===== ABOUT ME SECTION ======= -->
+          <section data-aos="flip-left" 
+          id="about-me" class=" about d-flex align-center justify-center flex-column ">
+            <h3>
+              About Me
+            </h3>
+            <div class="d-flex align-center justify-center flex-column">
+              <!--owner of portfolio's img -->
+              <figure class="about-me-profile-photo">
+                <img src="images/me4.jpg" alt="pascal joseph profile photo" >
+              </figure>
+            
+              <!-- content info about owner of portfolio -->
+              <div>
+                <p class="about-me-info pd-S">
+                  I'm Pascal — someone who genuinely finds joy in helping others, whether it involves my skills or simply being there to support. I have a natural ability to identify, solve, and even anticipate problems across different areas, and I’m always committed to growing through experience — both mine and others'.
+
+                  In software engineering, I focus on writing clean, efficient code that follows best practices and delivers real, effective results. I’m deeply inspired by software ideas because they offer limitless possibilities — and that’s where I thrive.
+                  
+                  I treat everyone with respect, not just because "you never know what tomorrow holds," but because it’s the right thing to do.
+                  
+                  Software is the new reality.
+                  #21stCenturySoftware
+                </p>
+              </div>
+            </div>
+          </section>
+
+
+          <!-- ======= contact section ===== -->
+          <section id="contact-me"  data-aos="fade-down" class="d-flex justify-center align-center pd-M  flex-column">
+            <h5 class="text-center pd-S">Contact Me</h5>
+            <div class="d-flex align-center contact-me-designer-info-cont">
+            <div  class="Contact-icon-cocntainer align-center">
+
+              <!-- linkdin social link -->
+              <a class="" href="#">
+                <svg class="" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+
+              <!-- Mail social link -->
+              <a target="_blank" class="" href="mailto:pas111cal3@gmail.com">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </a>
+
+
+              <!-- git hub 4 social link -->
+              <a target="_blank" class="" href="https://github.com/Ugochukwu111">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+            
+              <!-- twitter social link -->
+              <a target="_blank" href="https://x.com/Pas_Cal_001" class="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+              </a>
+            </div>
+            
+                <div>
+                  <p>This portfolio was inspired by <a href="https://x.com/fjmellq">Filip J.M</a> </p>
+                  <p>Developed and designed by <a href="https://x.com/Pas_Cal_001">Pascal</a></p>
+                  <p>
+                    &copy; 2025 pascal <i>21<sup>st</sup>Century Software</i>
+                  </p>
+                </div>
+          </div>
+          </section>
+
+      </main>
      <!-- AOS JS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="script.js"></script>

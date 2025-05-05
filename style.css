@@ -85,8 +85,8 @@ a{
 }
 img{
   width: 100%;
-  color: var(--bkg-clr);
   height: 100%;
+  color: var(--bkg-clr);
   object-fit: cover;
   border-radius: inherit;
   display: block; 
@@ -516,7 +516,7 @@ flex-grow: 1;
 
 .about-me-profile-photo{
   width: 150px;
-  aspect-ratio: 1;
+  height: 150px;
   background-color: var(--dk-pry-clr);
   border-radius: 50%;
 }
