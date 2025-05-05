@@ -76,11 +76,11 @@ window.addEventListener("scroll", () => {
 // js for my projects!!!
 const personalProject = [
    {
-    img: 'images/multistepProjectpicture.png',
+    img: 'images/questionProject.png',
     link: 'https://multi-step-form-one-alpha.vercel.app/',
-    name: 'Advanced Multi-Step Form',
+    name: 'Course Qiuzes',
     stack: 'HTML CSS JS',
-    description: 'lorem',
+    description: '[Ongoing]. This project is a simple quiz app that allows users to take quizzes on various topics. It was built using HTML, CSS, and JavaScript. The app features a user-friendly interface, multiple-choice questions, and instant feedback on answers. I created this project to practice my skills in web development and to provide a fun way for users to test their knowledge on different subjects.',
    },
    {
     img: 'images/kinematics-project-pic.png',
@@ -128,16 +128,8 @@ const collaborationProject = [
    link: 'https://github.com/21st-centuary-codes/Open-cart',
    name: 'Open-cart Website',
    stack: 'HTML CSS JS',
-   description: 'I am leading an ongoing project to develop an OpenCart eCommerce website, where I came up with the idea. My role is focused on the frontend, and I’m working with a team of developers to bring the site to life. The project involves collaboration through Git and GitHub, where I oversee version control and contribute to the overall design and development process. This experience has allowed me to strengthen my understanding of working with developers on a project and managing tasks efficiently.',
-  },
-  
-  {
-   img: '',
-   link: '',
-   name: '',
-   stack: 'HTML CSS JS',
-   description: 'lorem',
-  },
+   description: '[Ongoing]. I am leading an ongoing project to develop an OpenCart eCommerce website, where I came up with the idea. My role is focused on the frontend, and I’m working with a team of developers to bring the site to life. The project involves collaboration through Git and GitHub, where I oversee version control and contribute to the overall design and development process. This experience has allowed me to strengthen my understanding of working with developers on a project and managing tasks efficiently.',
+  }
 ];
 
 
